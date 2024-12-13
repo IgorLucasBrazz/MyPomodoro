@@ -2,7 +2,6 @@ import { ITarefa } from "../../types/tarefa";
 import React, { useState } from "react";
 import Botao from "../Botao";
 import style from './Formulario.module.scss'
-import {v4 as uuidv4} from 'uuid'
 
 interface Props {
     setTarefas: React.Dispatch<React.SetStateAction<ITarefa[]>>
@@ -23,7 +22,7 @@ function Formulario({setTarefas}: Props) {
                     tempo,
                     selecionado: false, 
                     completado:false,
-                    id: uuidv4()
+                    id: '5'
                 }
             ] 
         )
